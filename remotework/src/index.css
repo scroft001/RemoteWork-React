@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: var(--almost-white);
+  min-height: 100vh;
+}
+
 p{
   font-size: 18px;
 }

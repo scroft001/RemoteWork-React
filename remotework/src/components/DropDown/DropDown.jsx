@@ -1,8 +1,16 @@
 import React from 'react'
+import "./DropDown.scss"
 
-const Dropdown = () => {
+const Dropdown = (props) => {
   return (
-    <div>Dropdown</div>
+    <div className='app__dropdown'>
+      <ul>
+        {props.items.map((item, index) => {
+          return <li key={index}>{item}</li>
+        })
+        }
+      </ul>
+    </div>
   )
 }
 

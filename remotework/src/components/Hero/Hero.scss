@@ -51,6 +51,12 @@ main{
         padding: 1rem 2rem;
         margin-top: 2rem;
         border-radius: 15px;
+        border: 2px solid var(--almost-black);
+        &:hover{
+            background-color: var(--almost-white);
+            color: var(--almost-black);
+            border: 2px solid var(--almost-black);
+        }
         @media  screen and (max-width:700px){
             margin: auto;
             margin-top: 1.5rem;
