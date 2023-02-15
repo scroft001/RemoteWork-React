@@ -28,26 +28,26 @@ const Navbar = () => {
         <img src={logo} alt="company logo" />
         <ul>
           <li>
-            <a href='#' onClick={toggleFeatures}>
+            <a href='index.html' onClick={toggleFeatures}>
               Features {
               isFeaturesOpen? <img src={arrowUp} alt="arrow up" /> : <img src={arrowDown} alt="arrow down" />
             }</a>
             {isFeaturesOpen && <Dropdown items={featuresList} />}
           </li>
           <li>
-            <a href='#' onClick={toggleCompany}>Company {
+            <a href='index.html' onClick={toggleCompany}>Company {
               isCompanyOpen? <img src={arrowUp} alt="arrow up" /> : <img src={arrowDown} alt="arrow down" />
             } </a>
             {isCompanyOpen && <Dropdown items={companyList} />}
           </li>
-          <li><a href='#'>Careers</a></li>
-          <li><a href='#'>About</a></li>
+          <li><a href='index.html'>Careers</a></li>
+          <li><a href='index.html'>About</a></li>
         </ul>
       </div>
       <div className="navbar__right">
         <ul>
-            <li><a href='#'>Login</a></li>
-            <li id='registerButton'><a href='#'>Register</a></li>
+            <li><a href='index.html'>Login</a></li>
+            <li id='registerButton'><a href='index.html'>Register</a></li>
           </ul>
       </div>
     </nav>
