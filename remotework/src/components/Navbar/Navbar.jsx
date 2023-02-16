@@ -28,14 +28,14 @@ const Navbar = () => {
         <img src={logo} alt="company logo" />
         <ul>
           <li>
-            <a href='index.html' onClick={toggleFeatures}>
+            <a href='#' onClick={toggleFeatures}>
               Features {
               isFeaturesOpen? <img src={arrowUp} alt="arrow up" /> : <img src={arrowDown} alt="arrow down" />
             }</a>
             {isFeaturesOpen && <Dropdown items={featuresList} />}
           </li>
           <li>
-            <a href='index.html' onClick={toggleCompany}>Company {
+            <a href='#' onClick={toggleCompany}>Company {
               isCompanyOpen? <img src={arrowUp} alt="arrow up" /> : <img src={arrowDown} alt="arrow down" />
             } </a>
             {isCompanyOpen && <Dropdown items={companyList} />}
