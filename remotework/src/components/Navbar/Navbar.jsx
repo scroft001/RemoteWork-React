@@ -57,9 +57,11 @@ const Navbar = () => {
             <li id='registerButton'><a href='index.html'>Register</a></li>
           </ul>
       </div>
+      
+      {isMobileMenuOpen? <img id='menu' onClick={toggleMobileMenu} src={menuClose} alt="arrow up" /> : <img id='menu' onClick={toggleMobileMenu} src={menu} alt="arrow down" />}
       {
         isMobileMenuOpen &&
-        <nav className='mobileNav'>
+        <div className='mobileNav'>
           <ul>
           <li>
             <a href='#' onClick={toggleFeatures}>
@@ -81,10 +83,10 @@ const Navbar = () => {
             <li><a href='index.html'>Login</a></li>
             <li id='registerButton'><a href='index.html'>Register</a></li>
           </ul>
-        </nav>
+        </div>
       }
-      {isMobileMenuOpen? <img onClick={toggleMobileMenu} src={menu} alt="arrow up" /> : <img onClick={toggleMobileMenu} src={menuClose} alt="arrow down" />}
     </nav>
+    
   )
 }
 
