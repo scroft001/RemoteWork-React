@@ -66,3 +66,10 @@ nav{
             border-color: var(--almost-black);
         }
 }
+
+.mobileNav{
+    display: none;
+    @media  screen and (max-width:700px){
+        display: flex;
+    }
+}
